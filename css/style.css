@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/driving.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav_link {
+    flex: 1;
+    text-align: right;
+}
+
+.nav_link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav_link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d66961;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_link ul li:hover::after {
+    width: 100%;
+}
+
+.car_number {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+
+.sub_header {
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/nonmainpage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*-------------------lOG IN RELATED CSS BELOW---------------------------------*/
+.login_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+
+.login_outerbox_display {
+    background: white;
+    position: relative;
+    height: 600px;
+    width: 360px;
+    box-shadow: 0px 0px 24px rgb(168, 162, 162);
+}
+
+.login_innerbox_display {
+    z-index: 1; /*default 0; The z-index CSS property sets the z-order of a positioned element and its descendants or flex items.Overlapping elements with a larger z-index cover those with a smaller one.*/
+    position: relative;
+    height: 100%;
+}
+
+.login {
+    width: 350px;
+    padding: 25px;
+    padding-top: 100px;
+}
+
+.login_text {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.login_input {
+    border: none;
+    color: grey;
+    border-bottom: 3px solid #d1d1d4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+}
+
+.login_input:active,
+.login_input:focus,
+.login_input:hover {
+    outline: none;
+    border-bottom-color: rgb(168, 162, 162);
+}
+
+.login_submit {
+    background: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 15px;
+    padding-left: 24px;
+    border-radius: 26px;
+    border: 1px solid #d4d3e8;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: rgb(168, 162, 162);
+    box-shadow: 0px 2px 2px rgb(168, 162, 162);
+    cursor: pointer;
+}
+
+.login_submit:active,
+.login_submit:focus,
+.login_submit:hover {
+    border-color: rgb(168, 162, 162);
+    outline: none;
+}
+
+.login_yes_display {
+    border: none;
+    color: grey;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 90%;
+}
+
+.login_result_check {
+    border: none;
+    color: rgb(228, 119, 119);
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------------lOG IN RELATED CSS ABOVE---------------------------------*/
+
+/*-------------------CUSTOMER RELATED CSS BELOW---------------------------------*/
+.customer_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+
+.customer_outerbox_display {
+    background: white;
+    position: relative;
+    height: 600px;
+    width: 360px;
+    box-shadow: 0px 0px 24px rgb(168, 162, 162);
+}
+
+.customer_innerbox_display {
+    z-index: 1; /*default 0; The z-index CSS property sets the z-order of a positioned element and its descendants or flex items.Overlapping elements with a larger z-index cover those with a smaller one.*/
+    position: relative;
+    height: 100%;
+}
+
+.customer {
+    width: 350px;
+    padding: 25px;
+    padding-top: 100px;
+}
+
+.customer_text {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.customer_input {
+    border: none;
+    color: grey;
+    border-bottom: 3px solid #d1d1d4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+}
+
+.customer_input:active,
+.customer_input:focus,
+.customer_input:hover {
+    outline: none;
+    border-bottom-color: rgb(168, 162, 162);
+}
+
+.customer_radio {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.customer_radio {
+    border: none;
+    color: grey;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+}
+
+.customer_radio:active,
+.customer_radio:focus,
+.customer_radio:hover {
+    outline: none;
+    border-bottom-color: rgb(168, 162, 162);
+}
+
+.customer_submit {
+    background: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 15px;
+    padding-left: 24px;
+    border-radius: 26px;
+    border: 1px solid #d4d3e8;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: rgb(168, 162, 162);
+    box-shadow: 0px 2px 2px rgb(168, 162, 162);
+    cursor: pointer;
+}
+
+.customer_search_submit:active,
+.customer_search_submit:focus,
+.customer_search_submit:hover {
+    border-color: rgb(168, 162, 162);
+    outline: none;
+}
+
+.customer_result_check {
+    border: none;
+    color: rgb(228, 119, 119);
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer_to_link {
+    background: #fff;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 10px;
+    padding-left: 24px;
+    border-radius: 26px;
+    border: 1px solid #d4d3e8;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    color: rgb(228, 119, 119);
+    box-shadow: 0px 2px 2px rgb(168, 162, 162);
+    cursor: pointer;
+}
+
+.customer_to_link:active,
+.customer_to_link:focus,
+.customer_to_link:hover {
+    border-color: rgb(168, 162, 162);
+    outline: none;
+}
+
+.customer_add_outerbox_display {
+    position: relative;
+    height: 900px;
+    width: 360px;
+}
+
+/*-------------------CUSTOMER RELATED CSS ABOVE---------------------------------*/
+
+
+/* report related start*/
+.report_table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+
+  .report_table td, .report_table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+
+  .report_table tr:nth-child(even){background-color: #f2f2f2;}
+
+  .report_table tr:hover {background-color: #ddd;}
+
+  .report_table th {	
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+  }
+/* report related end*/
+/* Text format start */
+  .report_text {
+	text-align: center;
+	text-transform: uppercase;
+	color: #4CAF50;
+  }
+/* Text format end */ 
+/* div center start*/
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+/* div center end*/
